@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Akshita | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Akshita, a student building useful things for the web."
+    />
+    <meta name="theme-color" content="#0f1224" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="spotlight" aria-hidden="true"></div>
+
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top">Akshita</a>
+      <nav aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <h1 class="hero-name">Akshita<br /><span class="hl">Sharma</span></h1>
+        <p class="hero-line">
+          Student building small, useful things for the web, and learning
+          something new with each one.
+        </p>
+        <p class="hero-meta">
+          B.Tech, Computer Science, 2nd year. Open to internships.
+        </p>
+      </section>
+
+      <section id="about" class="block">
+        <h2>About</h2>
+        <div class="about-grid">
+          <div class="prose">
+            <p>
+              I'm a second-year student pursuing B.Tech in Banasthali Vidyapith.
+              I like starting with a real problem and building something people
+              can actually use.
+            </p>
+            <p>
+              Right now I'm focused on web development and getting better at
+              design. Outside of coursework I love to read, write, and listen to
+              music.
+            </p>
+            <p>
+              I'm looking for an internship where I can work with a team, get
+              honest feedback, and contribute to something real.
+            </p>
+            <p class="resume">
+              <a href="resume.pdf">Download my resume (PDF)</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="block">
+        <h2>Education</h2>
+        <ul class="edu">
+          <li>
+            <div>
+              <h3>B.Tech in Computer Science</h3>
+              <p class="edu-meta">Banasthali Vidyapith, 2025 to 2029</p>
+            </div>
+            <span class="edu-score">7.70 CGPA</span>
+          </li>
+          <li>
+            <div>
+              <h3>Class 12 (Senior Secondary)</h3>
+              <p class="edu-meta">CBSE, 2025</p>
+            </div>
+            <span class="edu-score">83.3%</span>
+          </li>
+          <li>
+            <div>
+              <h3>Class 10 (Secondary)</h3>
+              <p class="edu-meta">CBSE, 2023</p>
+            </div>
+            <span class="edu-score">91%</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="projects" class="block">
+        <h2>Projects</h2>
+        <div id="project-grid" class="projects"></div>
+      </section>
+
+      <section id="skills" class="block">
+        <h2>Skills</h2>
+        <dl class="skills">
+          <div>
+            <dt>Languages</dt>
+            <dd>C, C++, SQL</dd>
+          </div>
+          <div>
+            <dt>Web</dt>
+            <dd>HTML, CSS</dd>
+          </div>
+          <div>
+            <dt>Tools</dt>
+            <dd>Git and GitHub, VS Code, Figma, Canva</dd>
+          </div>
+          <div>
+            <dt>Working style</dt>
+            <dd>
+              Clear writing, asking good questions, breaking big problems into
+              small steps
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="contact" class="block contact">
+        <h2>Contact</h2>
+        <p class="contact-lead">
+          I reply to every message, usually within a day.
+        </p>
+        <a class="email" href="mailto: akshitayeeshu2007@gmail.com"
+          >akshitayeeshu2007@gmail.com</a
+        >
+        <ul class="links">
+          <li>
+            <a href="https://github.com/khlon1818" rel="noopener">GitHub</a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/akshita-sharma-278695368"
+              rel="noopener"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+
+        <form id="contact-form" class="form" novalidate>
+          <label for="f-name">Your Name</label>
+          <input
+            id="f-name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            required
+          />
+
+          <label for="f-msg">Message</label>
+          <textarea id="f-msg" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send message</button>
+          <p class="form-note" id="form-note" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year">2026</span> Akshita</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
