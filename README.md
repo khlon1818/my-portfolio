@@ -3,7 +3,7 @@
 
 My personal portfolio website: about me, education, projects, skills and contact.
 
-Live site: https://your-site.netlify.app
+Live site: https://khlon1818.github.io/my-portfolio/
 
 ## Built with
 
